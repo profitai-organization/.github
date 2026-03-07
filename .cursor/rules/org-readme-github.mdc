@@ -1,6 +1,6 @@
 ---
 description: Padrões para README de exibição da organização no GitHub (sem dados sensíveis)
-globs: README.md, **/.github/**
+globs: profile/README.md, **/.github/**
 alwaysApply: false
 ---
 

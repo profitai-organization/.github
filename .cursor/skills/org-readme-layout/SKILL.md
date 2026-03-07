@@ -9,21 +9,22 @@ Passo a passo para montar o README de exibição da organização no GitHub.
 
 ## 1. Logo (topo, centralizada)
 
-- **Local**: `assets/logo/` — usar um dos arquivos:
+- **Local**: `assets/logo/` (na raiz do repositório) — usar um dos arquivos:
   - nome contendo `notext` — logo sem texto (ex.: `logo-notext.jpg`, `logo-notext.png`)
   - nome contendo `text` — logo com texto (ex.: `logo-text.jpg`, `logo-text.png`)
 - **Extensão**: não assumir `.png`. Verificar o conteúdo da pasta `assets/logo/` e usar o **nome completo do arquivo** (com a extensão real: `.jpg`, `.png`, `.webp`, etc.) que corresponda à escolha do usuário.
 - **Estilo**: largura 200px, bordas arredondadas, centralizada.
+- **Caminho no README**: o README fica em **`profile/README.md`**; a imagem fica em `assets/logo/` na raiz. Usar o caminho relativo **`../assets/logo/<nome-do-arquivo>`** no `src` da tag `<img>`.
 
 Exemplo em Markdown (substituir `logo-text.jpg` pelo nome real do arquivo encontrado em `assets/logo/`):
 
 ```markdown
 <p align="center">
-  <img src="assets/logo/logo-text.jpg" width="200" style="border-radius: 8px;" alt="ProfitAI" />
+  <img src="../assets/logo/logo-text.jpg" width="200" style="border-radius: 8px;" alt="ProfitAI" />
 </p>
 ```
 
-O usuário escolhe **notext** ou **text**; o caminho da imagem deve ser `assets/logo/<nome-do-arquivo>` onde `<nome-do-arquivo>` é o arquivo real na pasta (ex.: `logo-text.jpg`, `logo-notext.png`).
+O usuário escolhe **notext** ou **text**; o caminho da imagem deve ser **`../assets/logo/<nome-do-arquivo>`** onde `<nome-do-arquivo>` é o arquivo real na pasta (ex.: `logo-text.jpg`, `logo-notext.png`).
 
 ## 2. Nome da organização
 
@@ -69,11 +70,11 @@ Manter linguagem clara e sem dados sensíveis.
 
 ## Template completo
 
-Usar esta estrutura ao montar o README. O caminho da logo deve ser o **nome real do arquivo** em `assets/logo/` (ex.: `logo-notext.jpg`, `logo-text.png`). Listar a pasta para obter o nome e extensão corretos.
+Usar esta estrutura ao montar o README em **`profile/README.md`**. O caminho da logo deve ser **`../assets/logo/<nome-do-arquivo>`** com o nome real do arquivo (ex.: `logo-notext.jpg`, `logo-text.png`). Listar a pasta `assets/logo/` para obter o nome e extensão corretos.
 
 ```markdown
 <p align="center">
-  <img src="assets/logo/logo-notext.jpg" width="200" style="border-radius: 8px;" alt="ProfitAI" />
+  <img src="../assets/logo/logo-notext.jpg" width="200" style="border-radius: 8px;" alt="ProfitAI" />
 </p>
 
 <p align="center"><strong>ProfitAI</strong></p>
@@ -91,7 +92,7 @@ No desenvolvimento do sistema, priorizamos o uso de **IA**, com foco em **agente
 
 ## Checklist antes de finalizar
 
-- [ ] Logo em `assets/logo/`: nome do arquivo verificado na pasta (extensão real: .jpg, .png, etc., não assumir .png).
+- [ ] README escrito em **`profile/README.md`**. Logo referenciada com `../assets/logo/<arquivo>`; nome do arquivo verificado em `assets/logo/` (extensão real: .jpg, .png, etc., não assumir .png).
 - [ ] Logo com `width="200"` e bordas arredondadas.
 - [ ] Nome da organização abaixo da logo.
 - [ ] Divisória entre cabeçalho e resumo.

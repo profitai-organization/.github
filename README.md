@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo/logo-text.png" width="200" style="border-radius: 8px;" alt="ProfitAI" />
+  <img src="assets/logo/logo-text.jpg" width="200" style="border-radius: 8px;" alt="ProfitAI" />
 </p>
 
 <p align="center"><strong>ProfitAI</strong></p>
